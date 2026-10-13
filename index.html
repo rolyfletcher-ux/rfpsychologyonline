@@ -16,23 +16,35 @@
         }
 
         .container {
-            background-color: #E5DECA;
+            background-color: #FFFFFF;
             padding: 20px;
             text-align: center;
         }
+	
+	.left-links {
+  	text-align: left;
+	}
 
+	a {
+ 	 color: black;
+  	font-weight: bold;
+  	text-decoration: none;
+  	margin-right: 15px; /* Adds space between horizontal links */
+	}
+		
         h1,
         h2 {
             color: black;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: black;
             max-width: 600px;
             margin: 20px auto;
         }
-
+	
+	
         img {
             max-width: 100%;
             height: auto;
@@ -55,40 +67,10 @@
             }
 
             p {
-                font-size: 1.4rem;
+                font-size: 1 rem;
             }
-	    a {
- 		 color: black;
-  		font-weight: bold;text-decoration: none;
-	        
-		}
-`	   ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #E5DECA;
-}
+	   }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 8px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color:   #F5F5DC;
-}	
-nav#some_id ul{
-       list-style-type:none;
-}
-        }
     </style>
 </head>
 
@@ -97,16 +79,18 @@ nav#some_id ul{
 	
     </div>	-->
 	
-    <div class="container">
-<nav id="some_id">
-        	<ul><li>  <a href="index.html">Home &nbsp;&nbsp; &nbsp;&nbsp;  </a></li></ul>
-	   <ul> <li><a href="about.html">About me &nbsp;&nbsp; &nbsp;&nbsp;  </a></li></ul>
-	    <ul><li> <a href="contact.html">Contact</a></li></ul>	
-        </nav><br>
+    <div class="container"> <!-- This is text-align: center -->
+  <div class="left-links">  
+	   <a href="index.html">Home &nbsp;&nbsp; &nbsp;&nbsp;  </a>
+	   <a href="about.html">About me &nbsp;&nbsp; &nbsp;&nbsp;  </a>
+	    <a href="contact.html">Contact</a>
+  </div>
+
+        <br>
 
         <h1><b><i>Counselling & Psychotherapy</b></i></h1>
         <h2><i>with Dr Roly Fletcher</i></h2>
-        
+     
          <picture>
  		 <source media="(min-width: 650px)" srcset="images/large.jpg"> 
  		 <source media="(min-width: 465px)" srcset="images/small.jpg.jpg">
@@ -121,11 +105,7 @@ As it's not always convenient to travel to a consulting room, sessions are onlin
 <br><br>
 Over time therapy can bring greater understanding of these issues, how to deal with them, and how you feel about them. 
         </p>
-       <!-- <picture>
-            <source media="(min-width: 768px)" srcset= "https://media.geeksforgeeks.org/wp-content/uploads/20190809013546/gfg_350X350.png">
-            <img src= "https://media.geeksforgeeks.org/wp-content/uploads/20190809013546/gfg_350X350.png" alt="GeeksforGeeks logo" width="200" height="200">
-        </picture>-->
-    </div>
+           </div>
 </body>
 
 </html>

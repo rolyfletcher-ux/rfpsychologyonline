@@ -16,10 +16,21 @@
         }
 
         .container {
-            background-color: #E5DECA;
+            background-color: #FFFFFF;
             padding: 20px;
             text-align: center;
         }
+	.left-links {
+  	text-align: left;
+	}
+
+	a {
+ 	 color: black;
+  	font-weight: bold;
+  	text-decoration: none;
+  	margin-right: 15px; /* Adds space between horizontal links */
+	}
+
 
         h1,
         h2 {
@@ -27,7 +38,7 @@
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1 rem;
             color: black;
             max-width: 600px;
             margin: 20px auto;
@@ -55,19 +66,14 @@
             }
 
             p {
-                font-size: 1.4rem;
+                font-size: 1rem;
             }
-	    a {
- 		 color: black;
-  		font-weight: bold;text-decoration: none;
-	        
-		}
-`	   ul {
+	   	   ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #E5DECA;
+  background-color: #FFFFFF;
 }
 
 li {
@@ -91,8 +97,10 @@ nav#some_id ul{
         }
 .flex-container {
   display: flex;       /* Aligns children horizontally */
-  align-items: center; /* Centers the image and text vertically */
+ align-items: flex-start; /* CHOOSE THIS: Aligns the image and text to the top */
   gap: 20px;           /* Adds clean spacing between the image and text */
+  /*align-items: center;  Centers the image and text vertically */
+  /* gap: 20px;           Adds clean spacing between the image and text */
 }
 
 .side-image {
@@ -108,11 +116,12 @@ nav#some_id ul{
     </div>	-->
 	
     <div class="container">
-<nav id="some_id">
-        	<ul><li>  <a href="index.html">Home &nbsp;&nbsp; &nbsp;&nbsp;  </a></li></ul>
-	   <ul> <li><a href="about.html">About me &nbsp;&nbsp; &nbsp;&nbsp;  </a></li></ul>
-	    <ul><li> <a href="contact.html">Contact</a></li></ul>	
-        </nav><br>
+<div class="left-links">  
+	   <a href="index.html">Home &nbsp;&nbsp; &nbsp;&nbsp;  </a>
+	   <a href="about.html">About me &nbsp;&nbsp; &nbsp;&nbsp;  </a>
+	    <a href="contact.html">Contact</a>
+  </div>
+<br>
 
         <h1><b><i>Counselling & Psychotherapy</b></i></h1>
         <h2><i>with Dr Roly Fletcher</i></h2>
@@ -128,7 +137,7 @@ nav#some_id ul{
 	<picture>
  		 <source media="(min-width: 650px)" srcset="images/me.jpg">
  		 <source media="(min-width: 465px)" srcset="images/8.jpg.jpg">
-  		<img src="images/8.jpg" alt="Picture od Me" style="width:auto;">
+  		<img src="images/8.jpg" alt="" style="width:auto;">
         </picture>
 	
     <div class="text-content">
